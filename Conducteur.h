@@ -1,16 +1,17 @@
-#define Conducteur_H
-#ifndef Conducteur_H
+#ifndef CONCUCTEUR_H
+#define CONDUCTEUR_H
+
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Voiture.h" 
+
 class Conducteur {
 public:
    
-    Conducteur(std::string nom, int experience,Voiture voiture);
+    Conducteur(std::string nom,Voiture voiture,int experience);
     void faireEvoluerExperience(int augmentation);
     void changerDeVoiture(const Voiture& nouvelleVoiture);
- // Fonction pour récupérer les informations du conducteur sous forme de chaîne de caractères
      std::string obtenirInformations() const;
 
 private:
@@ -20,6 +21,5 @@ private:
     int experience;
     Voiture voiture;
 };
-
 
 #endif

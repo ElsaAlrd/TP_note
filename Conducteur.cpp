@@ -2,7 +2,7 @@
 #include"Conducteur.h"
 #include "Voiture.h"
 
-Conducteur::Conducteur(std::string nom,int experience, Voiture voiture)
+Conducteur::Conducteur(std::string nom, Voiture voiture,int experience)
     : nom(nom), experience(0), voiture(voiture) {}
 
 void Conducteur::faireEvoluerExperience(int augmentation) {

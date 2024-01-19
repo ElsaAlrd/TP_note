@@ -1,6 +1,10 @@
+#ifndef TAXI_H
+#define TAXI_H
+
 #include <vector>
 #include <string>
 #include "Conducteur.h" 
+
 
 class Taxi {
 
@@ -20,3 +24,5 @@ private:
     std::string nomTaxi;
     std::vector<Conducteur> conducteurs;
 };
+
+#endif
